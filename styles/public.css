@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+:root{
+    --white:#ffffff;
+    --blue:#011f33;
+    --light-blue:#40ade9;
+    --dark-blue:#031827;
+
+    --tran: all 0.3s ease;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    font-family: poppins;
+    background-color: var(--white);    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2.5em 0;
+    margin: auto;
+    max-width: 72em;
+    width:100%;    
+}
+
+.navbar .nav-logo, .column .nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;    
+}
+
+.navbar .nav-logo{
+    margin: 0 0 0 1em;
+}
+
+.nav-logo img{
+    height: 12em;
+    border-radius: 50%;
+}
+
+.navbar .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 30em;
+}
+
+.link a{
+    position: relative;
+    
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 0 0 0.9em 0;
+    text-decoration: none;    
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 0.1em;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light-blue);
+    transition: var(--tran);
+}
+
+.link a:hover::after{
+    width: 100%;    
+}
+
+.btn{
+    width: 10em;
+    padding: 0.6em;
+    color: var(--white);
+    background-color: var(--light-blue);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.4em;
+    border: 0.2em solid var(--light-blue);
+    transition: var(--tran);
+}
+
+.navbar .nav-btn{
+    margin: 0 1em 0 0;    
+}
+
+.nav-btn:hover, .btn1:hover{
+    color: var(--light-blue);
+    background-color: darkblue;
+    border-color: var(--light-blue);
+    transition: var(--tran);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1.5em 0;
+    margin: auto;
+    max-width: 72em;
+    width: 100%;    
+}
+
+.container .content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 0 0 1.5em;    
+}
+
+.content h1{
+    color: #008AAA;
+    font-size: 3rem;
+    font-weight: 600;   
+}
+
+.content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--light-blue);    
+}
+
+.content h3{
+    color: #D1884F;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.content p{
+    
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5em;    
+}
+
+.image img{
+    width: 28em;    
+}
+
+.content .button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2em 0 0 0;
+    width: 22em;    
+}
+
+.skill-area h1{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: 300;    
+}
+
+.skill-area .skill{
+    position: relative;
+    width: 30em;
+    margin: 1.5em 0 0 0;
+}
+
+.skill .skill-title{
+    margin: 0 0 0.5em 0;
+    
+    font-size: 1.2rem;
+    font-weight: 400;    
+}
+
+.skill .skill-bar{
+    position: absolute;
+    width: 100%;
+    background-color: var(--white);
+    height: 1em;
+    z-index: -1;
+    border: 1px solid black;
+    border-radius: 6.25em;    
+}
+
+.skill .skill-fill{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--light-blue);
+    height: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.skill-fill .skill-percent{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 0.5em;
+}
+
+.skill .html{
+    width: 85%;
+}
+
+.skill .css{
+    width: 70%;
+}
+
+.skill .javascript{
+    width: 65%;
+}
+
+.skill .python{
+    width: 60%
+}
+
+.skill .csharp{
+    width: 50%
+}
+
+.skill .sql{
+    width: 60%
+}
+
+.skill .mvc{
+    width: 75%
+}
+
+.skill .salesforce{
+    width: 50%
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6em 0 0 0;
+    width: inherit;
+}
+
+.footer .footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: inherit;
+}
+
+.footer-top .column{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.column p{
+    
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0.8em 0 1.5em 0;
+}
+
+.column .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;    
+}
+
+.column .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.1em solid var(--white);
+    padding: 0.4em;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    margin: 0 0.4em;
+    text-align: center;
+    transition: var(--tran);
+}
+
+.column .social a i{
+    
+    font-size: 1.4rem;    
+}
+
+.column .social a:hover{
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);    
+}
+

@@ -1,0 +1,43 @@
+/*Landscape to Portrait*/
+
+@media screen and (max-width:1024px) {
+    .navbar .nav-logo{
+        margin: 0 0 0 2em;
+    }
+
+    .navbar .nav-link{
+        display: none;
+    }
+
+    .navbar .nav-btn{
+        margin: 0 2em 0 0;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 1.5em o;
+    }
+
+    .container .content{
+        margin: 1em 0 0 0;
+        padding: 0 1em;
+    }
+
+    .footer{
+        padding: 0;
+    }
+
+    .footer .footer-top{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 22em;
+    }
+
+    .footer-top .column{
+        margin: 2em 0 0 0;        
+    }
+}
+
+
+
